@@ -32,11 +32,11 @@ int main()
     Mat edge;
     Canny(gray, edge, 50, 150);
     imshow("边缘检测", edge);
-
+/*
     Mat binary;
     threshold(gray, binary, 127, 255, THRESH_BINARY);
     imshow("二值图", binary);
-
+*/
     // 改这里！不卡死
     while (waitKey(1) != 27)
     {
