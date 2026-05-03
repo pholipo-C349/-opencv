@@ -28,11 +28,11 @@ int main()
     Mat blur;
     GaussianBlur(img, blur, Size(5, 5), 0);
     imshow("高斯模糊", blur);
-
+/*
     Mat edge;
     Canny(gray, edge, 50, 150);
     imshow("边缘检测", edge);
-
+*/
     Mat binary;
     threshold(gray, binary, 127, 255, THRESH_BINARY);
     imshow("二值图", binary);
